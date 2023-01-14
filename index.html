@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora de Kcals - Developed By @eduuzerda</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400&display=swap" rel="stylesheet">
+
+
+	
+
+	
+</head>
+<body>
+	<div class="container">
+			<div class="calculator">
+				<form id="form">
+					<div class="banner__container">
+						<div class="banner__items-img">
+							<img src="images/logo.png">
+						</div>
+						<div class="banner__items">
+							<h1>KCals Calculator</h1>
+							<h4>Calorias diarias recomendas</h4>
+						</div>
+						
+					</div>
+					
+				<div class="form__group">
+					<label>Seleccione su sexo</label>
+					<select id="gender">
+						<option value="male">Masculino</option>
+						<option value="female">Femenino</option>
+					</select>
+				</div>
+				<div class="form__group">
+					<label for="age">Ingrese su edad</label>
+					<input type="number" id="age" required max="100">
+				</div>
+				<div class="form__group">
+					<label for="weight" place>Ingrese su peso en Kg</label>
+					<input type="number" id="weight" required max="500">
+				</div>
+				<div class="form__group">
+					<label for="heigth">Ingrese su altura en cm</label>
+					<input type="number" id="height" required max="250">
+				</div>
+				<div class="form__group">
+					<label>Seleccione su nivel de actividad</label>
+					<select  id="levelAct">
+						<option value="1.2">Sedentario</option>
+						<option value="1.375">Poca actividad</option>
+						<option value="1.55">Actividad moderada</option>
+						<option value="1.725">Actividad intensa</option>
+						<option value="1.9">Actividad muy intensa</option>
+					</select>
+				</div>
+				<div class="form__btns">
+						<button type="submit" class="btn-calc">Calcular</button>
+				</div>
+					
+					
+					</div>
+				<footer>
+			<p>Developed by <a href="https://www.instagram.com/eduuzerda" target="_blank">@eduuzerda</a></p> <p>© Todos los derechos reservados</p>
+		</footer>
+		<div class="modal">
+			
+						<div class="modal__container">
+							<div class="item modal__title">
+								<h2>TUS RESULTADOS</h2>
+							</div>
+							<div class="item win__weight">	
+								<p id="lose">---</p>
+								<p>Consumiendo estas calorias diarias podrás bajar entre 0.5Kg a 1Kg por semana.</p>
+							</div>
+							<div class="item maintenance__weight">
+								<p id="maintenance">---</p>
+								<p>Consumiendo estas calorias diarias podrás mantener su peso de manera sostenible en el tiempo.</p>
+							</div>
+							<div class="item lose__weight">
+								<p id="win">---</p>
+								<p>Consumiendo estas calorias diarias podrás subir entre 0.5Kg a 1Kg por semana.</p>
+							</div>
+							<div class="item modal-close-btn">
+								<a href="#" class="modal__close">Cerrar</a>
+							</div>
+						</div>
+				</div>
+			</form>
+			</div>
+		</div>
+		
+</body>
+<script src="scripts.js"></script>
+</html>
